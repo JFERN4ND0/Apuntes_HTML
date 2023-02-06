@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Tipos de Input</title>
+  </head>
+  <!-- 
+		|input type:
+		⁡⁣⁢⁣button⁡ -> Visualmente igual que un botón <button>
+		⁡⁣⁢⁣subnit⁡ -> Se utiliza para enviar el formulario
+
+		⁡⁣⁢⁣date⁡ -> fecha datetime esta obsoleto
+		⁡⁣⁢⁣datetime-local⁡ -> fecha y hora, no funciona en firefox
+		⁡⁣⁢⁣time⁡ -> Se utiliza para introducir una hora
+			TIP
+			*Se recomienda usar datetime y time para seleccionar
+			fecha y hora
+			⁡⁣⁣⁢hidden⁡ -> Campo oculto, puede contener valor pero no se
+			mostrarà
+		⁡⁣⁢⁣month⁡ -> se utiliza para introducir un mes
+		⁡⁣⁢⁣week⁡ -> Se utiliza para introducir el número de semana del
+		año
+			
+		⁡⁣⁢⁣search⁡ -> Se utiliza para las barras de busqueda
+		⁡⁣⁢⁣tel⁡ -> Se utiliza para introducir números telefónicos
+		⁡⁣⁢⁣email⁡ -> Se utiliza para introducir en email
+		⁡⁣⁢⁣password⁡ -> Se utiliza para contraseñas
+		⁡⁣⁢⁣url⁡ -> Se utiliza para introducir URLs
+		
+		⁡⁣⁢⁣color⁡ -> especifica un color
+		⁡⁣⁢⁣number⁡ -> Se utiliza para valores numéricos
+		⁡⁣⁢⁣range⁡ -> Establece un rango
+		⁡⁣⁢⁣reset⁡ -> resetea el formulario
+		⁡⁣⁢⁣text⁡ -> Valor por defecto
+		
+		⁡⁢⁢⁢...Existen más...⁡
+
+		⁡⁣⁢⁣radio⁡ -> Permite seleccionar una única opción de opciones
+		relacionadas
+		⁡⁣⁢⁣checkbox⁡ -> Permite seleccionar varias opciones de una
+		lista de opciones relacionadas
+		⁡⁣⁢⁣select⁡ -> Crea una lista de opciones donde podemos
+		seleccionar una o varias opciones
+
+		cada opción irá dentro de una etiqueta <option> </option>
+
+		Si tenemos muchas opciones podemos ordenarlas por categorias a
+		través de la etiqueta
+		<optgroup> con el atributo label para nombrar la categoria
+	-->
+  <body>
+    <form>
+      <input type="date" />
+      <input type="datetime-local" />
+      <input type="time" />
+      <input type="month" />
+      <input type="color" />
+      <input type="number" />
+      <input type="range" />
+      <input type="reset" />
+      <input type="hidden" />
+
+      <h2>Género</h2>
+      <label
+        >Masculino
+        <input type="radio" name="gender" value="masculino" checked />
+      </label>
+      <label
+        >Femenino
+        <input type="radio" name="gender" value="femenino" />
+      </label>
+      <label
+        >Desconocido
+        <input type="radio" name="gender" value="desconocido" />
+      </label>
+    </form>
+
+    <form>
+      <div>
+        <label>
+          HTML
+          <input type="checkbox" name="languages" value="HTML" />
+        </label>
+        <label>
+          CSS
+          <input type="checkbox" name="languages" value="CSS" />
+        </label>
+        <label>
+          JavaScript
+          <input type="checkbox" name="languages" value="JavaScript" />
+        </label>
+      </div>
+    </form>
+
+    <h1>Elementos seleccionables</h1>
+    <form>
+      <select name="lenguajes">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javas">JavaScript</option>
+      </select>
+    </form>
+
+    <form>
+      <select name="macotas">
+        <optgroup label="4 patas">
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+          <option value="hamster">Hamster</option>
+          <option value="conejo">conejo</option>
+        </optgroup>
+        <optgroup label="aves">
+          <option value="loro">Loro</option>
+          <option value="canario">Canario</option>
+        </optgroup>
+        <optgroup label="otras">
+          <option value="serpientes">Serpientes</option>
+          <option value="tarantula">Tarantula</option>
+        </optgroup>
+      </select>
+    </form>
+
+    <h1>Elementos seleccionables</h1>
+    <form>
+      <input type="list" list="pets" />
+      <datalist id="pets">
+        <option value="perro"></option>
+        <option value="gato"></option>
+        <option value="hamster"></option>
+        <option value="conejo"></option>
+        <option value="loro"></option>
+        <option value="canario"></option>
+        <option value="serpiente"></option>
+        <option value="tarantula"></option>
+      </datalist>
+    </form>
+
+    <a href="mas_elementos.html"></a>
+  </body>
+</html>

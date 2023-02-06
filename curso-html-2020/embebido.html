@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contenido Embebido</title>
+  </head>
+  <!-- 
+	El contenido Embebido es todo aquel que se trae desde afura
+	imágenes, videos, audios, etc.
+?	Imágenes
+		|vectoriales
+			svg (recomendado siempre que se pueda)
+			flaticon.es o copiando el codigo .svg (los g no son necesarios)
+		|mapa de bits
+			jpg
+			png 8 y 24(si necesitas transparencias)
+			gif(si necesitas una imagen animada)
+			webp(el formato que menos pesa) (imagenonline-convert.com)
+	se agregan dentro de una carpeta llamada imagenes dentro de otra
+	llamada asset asset/imagenes
+
+	|DPR (Device Pixel Ratio)
+		Es la relación que existe entre los pixeles reales que tiene el dispositivo y los pixeles
+		que tenemos disponibles para "pintar" contenido
+
+	DPR = pixeles reales / pixeles disponibles
+	en compu suele ser 1 en telefonos 2 o más, se representa como ?x ?=NÙMERO
+	whatismyviewport.com
+ -->
+  <body>
+    <h1>Contenido embebido</h1>
+    <!-- 
+		<img src="/assets/images/IMG.formato" alt="obligatorio(representacion de la imagen">
+		Para poner una imagen u otra a razón del DPR
+		<img srcset="rutaopcion1,rutaopcion2 condicion(ejemplo 3x)" alt=representacion>
+		<img srcset="rutaopcion1,rutaopcion2 condicion(ejemplo 3x)" src="ruta en caso de que no soporte ninguna anterior" alt=representacion>
+
+		EXPERIMENTAL pero se usa de forma regular
+		<picture>
+			<source srcset="rutaopcion1,rutaopcion2 condicion(ejemplo 3x)" media="(max-whidth:1200px)">
+			<img src="ruta" alt="obligatorio(representacion de la imagen)">
+		</picture>
+	 --></body>
+</html>

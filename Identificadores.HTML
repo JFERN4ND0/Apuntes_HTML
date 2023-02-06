@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale1.0" />
+    <title>Elementos de linea</title>
+    <style>
+      .parrafo-1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <!-- 
+		Los atributos son valores adicionales que configuran los elementos y/o ajustan su comportamiento.
+		Existen dos tipos de atributos 
+		comunes:
+		su sintaxis es -> atributo="valor"
+		booleanos:
+		si existen son true si no estan son false
+
+		⁡⁣⁢⁣class⁡ -> Éste atributo se usa para dar estilos a través de
+		css
+
+		⁡⁣⁢⁣id⁡ -> Es un identificador único que se utiliza para
+		seleccionar el elemento desde JS y para hacer navegación a
+		través de anclas
+
+		⁡⁣⁢⁣title⁡ -> Es un atributo que ayuda a la accesibilidad
+		mostrando una descripción del elemento al que pertenece. Aparece
+		el mensaje en un tooltip
+
+		⁡⁣⁢⁣data-*⁡ -> Es un atributo que nos permite guardar algún
+		valor en la etiqueta HTML
+	 -->
+
+  <body>
+    <p class="parrafo-1">Clases</p>
+    <p id="parrafo">Identificador</p>
+    <p title="Ejemplo atributo title">Título con tooltip</p>
+    <p id="parrafo2" data-ejemplo>Datos pasados en la etiqueta</p>
+
+    <script>
+      const p = document.getElementById("parrafo");
+      const parrafo2 = document.getElementById("parrafo2");
+
+      console.log(p.textContent);
+      console.log(parrafo2.dataset.ejemplo);
+    </script>
+  </body>
+</html>

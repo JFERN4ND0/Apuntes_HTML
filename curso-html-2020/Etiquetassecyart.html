@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Etiquetas</title>
+  </head>
+  <!--
+⁡⁣⁢⁣section⁡: Es un contenedor que agrupa contenido que esta relacionado
+
+⁡⁣⁢⁣article⁡: Es un contenedor que agrupa contenido independiente, es
+decir, si se lee tiene sentido por si solo
+
+⁡⁣⁢⁣aside⁡: Se utiliza para representar contenido relacionado pero que no
+forna parte del contenido principal
+
+|Anidamiento:
+	Un section puede contener articles, por ejemplo, si tenemos
+	varios artículos que hablan sobre noticias, deben ir dentro
+	de un section, ya que es contenido relacionado entre sí, y
+	los article serían cada una de las noticias porque podríamos
+	leer cada una sin haber leído el resto, y seguiría teniendo
+	sentido.
+	El article es definido como un componente de la página de
+	contenido independiente, esto implica que esta etiqueta pueda
+	tener un header y un footer propios.
+
+	También existe el caso en el que un article contenga varias
+	secciones, el artículo independiente podría ser navegadores y
+	este contener dentro secciones como navegadores más
+	utilizados en 2020
+
+para saner si un archivo HTML es semanticamente correcto se pega en:
+* https://validator.w3.org/
+-->
+  <body>
+    <main>
+      <section>
+        <h1>Section como contenedor</h1>
+        <section>
+          <h2>Noticias Del Día</h2>
+          <article>
+            <header>
+              <h3>Noticia 1</h3>
+            </header>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              doloremque optio tempore dolores in itaque alias, totam officiis
+              dolorum laudantium dolore quos quibusdam, ad tenetur sit eum?
+              Suscipit, tempora facere.
+            </p>
+            <footer>La noticia 1 ocurrió en Madrid</footer>
+          </article>
+          <article>
+            <h3>Noticia 2</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+              consequatur numquam magnam nostrum amet culpa fugiat unde
+              architecto quisquam, dolore, cum quos rem aliquam itaque repellat
+              voluptatem sapiente illo sint?
+            </p>
+          </article>
+        </section>
+        <aside>
+          Para saber si un archivo es semanticamente correcto se pega en:
+          <a href="https://validator.w3.org/">validator</a>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
